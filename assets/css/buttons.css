@@ -1,0 +1,115 @@
+.btn, .btn-outline, .btn-secondary, .btn-solid, .btn-primary1, .btn-primary {
+  display: flex;
+  width: 155px;
+  height: 45px;
+  padding: 19px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+}
+.btn:disabled, .btn-outline:disabled, .btn-secondary:disabled, .btn-solid:disabled, .btn-primary1:disabled, .btn-primary:disabled {
+  background: #A3A9A5;
+  color: #ffffff;
+  cursor: not-allowed;
+  opacity: 0.8;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #3fd0c9 0%, #70f07f 100%);
+  border: none;
+}
+.btn-primary span {
+  color: #02353c;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.btn-primary:hover {
+  background: linear-gradient(90deg, #6FF081 0.1%, #42D2C4 99.9%);
+}
+.btn-primary:active {
+  background: linear-gradient(90deg, #3FD0C9 0%, #70F07F 100%);
+}
+.btn-primary:disabled {
+  background: #A3A9A5;
+}
+
+.btn-primary1 {
+  background: #fff;
+  border: 1px solid var(--Gradient-4, #3FD0C9);
+}
+.btn-primary1 span {
+  color: #02353c;
+  font-family: Lato;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.btn-primary1:hover {
+  background: linear-gradient(90deg, #6FF081 0.1%, #42D2C4 99.9%);
+}
+.btn-primary1:active {
+  background: #70f07f;
+}
+.btn-primary1:disabled {
+  background: #A3A9A5;
+  border: 1px solid #A3A9A5;
+  background: #FFF;
+}
+.btn-primary1:disabled span {
+  color: #A3A9A5;
+}
+
+.btn-solid {
+  background: #70f07f;
+  color: #ffffff;
+}
+.btn-solid:hover {
+  background: #42d2c4;
+}
+.btn-solid:active {
+  background: #70f07f;
+}
+.btn-solid:disabled {
+  background: #A3A9A5;
+}
+
+.btn-secondary {
+  background: #014d42;
+  color: #ffffff;
+}
+.btn-secondary:hover {
+  background: #016758;
+}
+.btn-secondary:active {
+  background: #017c6e;
+}
+.btn-secondary:disabled {
+  background: #A3A9A5;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid linear-gradient(90deg, #3fd0c9 0%, #70f07f 100%);
+  color: #02353c;
+}
+.btn-outline:hover {
+  background: linear-gradient(90deg, #6FF081 0.1%, #42D2C4 99.9%);
+  color: #ffffff;
+}
+.btn-outline:active {
+  background: linear-gradient(90deg, #3FD0C9 0%, #70F07F 100%);
+}
+.btn-outline:disabled {
+  border-color: #A3A9A5;
+  color: #A3A9A5;
+}
+
+/*# sourceMappingURL=buttons.css.map */

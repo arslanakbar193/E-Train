@@ -1,0 +1,61 @@
+.background-primary {
+  background: linear-gradient(154deg, #B5FFFA 10.54%, #B1F0BD 17.39%, #FFF 40.22%);
+}
+
+.background-secondary {
+  background: linear-gradient(154deg, #9AFFF8 1.87%, #DEFFDD 15.59%, #F2F2F2 31.52%);
+}
+
+.background-tertiary {
+  background: linear-gradient(157deg, #9AFFF8 -14.92%, #DEFFDD 20.77%, #F2F2F2 47.39%);
+}
+
+.background-solid-primary {
+  background: #10283A;
+}
+
+.background-solid-secondary {
+  background: #70F07F;
+}
+
+.background-solid-tertiary {
+  background: #42D2C4;
+}
+
+.background-solid-tetra {
+  background: #000;
+}
+
+.background-solid-penta {
+  background: #F6F6F6;
+}
+
+.background-solid-white {
+  background: #FFF;
+}
+
+.background-gradient-primary {
+  background: linear-gradient(180deg, #052130 0%, #067959 100%);
+}
+
+.background-gradient-secondary {
+  background: linear-gradient(90deg, #052130 -0.01%, #6FF081 94.48%);
+}
+
+.background-gradient-tertiary {
+  background: linear-gradient(90deg, #42D2C4 0.1%, #6FF081 99.9%);
+}
+
+.background-gradient-tetra {
+  background: linear-gradient(90deg, #6FF081 0.1%, #42D2C4 99.9%);
+}
+
+.background-theme1 {
+  background: #051C2D;
+}
+
+.background-theme2 {
+  background: #041827;
+}
+
+/*# sourceMappingURL=backgrounds.css.map */

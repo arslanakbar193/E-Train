@@ -1,0 +1,172 @@
+// ------------------------
+// 🎨 Color Variables
+// ------------------------
+$primary-gradient: linear-gradient(90deg, #3fd0c9 0%, #70f07f 100%);
+$primary-hover: linear-gradient(90deg, #6FF081 0.1%, #42D2C4 99.9%);
+$primary-active: linear-gradient(90deg, #3FD0C9 0%, #70F07F 100%);
+$primary-disabled: #A3A9A5;;
+
+
+$white-bg: #fff;
+$solid-bg: #70f07f;
+$solid-hover: #42d2c4;
+$solid-active: #70f07f;
+
+$secondary-bg: #014d42;
+$secondary-hover: #016758;
+$secondary-active: #017c6e;
+
+$text-white: #ffffff;
+$text-dark: #02353c;
+
+$border-radius: 8px;
+$font-family: "Lato", sans-serif;
+
+// ------------------------
+// 🧩 Base Button
+// ------------------------
+.btn {
+  display: flex;
+  width: 155px;
+  height: 45px;
+  padding: 19px 38px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  
+
+  &:disabled {
+    background: $primary-disabled;
+    color: $text-white;
+    cursor: not-allowed;
+    opacity: 0.8;
+  }
+}
+
+// ------------------------
+// 🌈 Primary Button
+// ------------------------
+.btn-primary {
+  @extend .btn;
+  background: $primary-gradient;
+  border: none;
+  span {
+    color: $text-dark;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &:hover {
+    background: $primary-hover;
+  }
+
+  &:active {
+    background: $primary-active;
+  }
+
+  &:disabled {
+    background: $primary-disabled;
+  }
+}
+
+.btn-primary1 {
+  @extend .btn;
+  background: $white-bg;
+  border: 1px solid var(--Gradient-4, #3FD0C9);
+span {
+    color: $text-dark;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &:hover {
+    background: $primary-hover;
+  }
+
+  &:active {
+    background: $solid-bg;
+  }
+
+  &:disabled {
+    background: $primary-disabled;
+    border: 1px solid #A3A9A5;
+    background: #FFF;
+    span{
+        color:#A3A9A5;
+    }
+  }
+}
+
+// ------------------------
+// 💚 Solid Button
+// ------------------------
+.btn-solid {
+  @extend .btn;
+  background: $solid-bg;
+  color: $text-white;
+
+  &:hover {
+    background: $solid-hover;
+  }
+
+  &:active {
+    background: $solid-active;
+  }
+
+  &:disabled {
+    background: $primary-disabled;
+  }
+}
+
+// ------------------------
+// 🟢 Secondary Button
+// ------------------------
+.btn-secondary {
+  @extend .btn;
+  background: $secondary-bg;
+  color: $text-white;
+
+  &:hover {
+    background: $secondary-hover;
+  }
+
+  &:active {
+    background: $secondary-active;
+  }
+
+  &:disabled {
+    background: $primary-disabled;
+  }
+}
+
+// ------------------------
+// ✳️ Outlined (for all variants)
+// ------------------------
+.btn-outline {
+  @extend .btn;
+  background: transparent;
+  border: 1px solid $primary-gradient;
+  color: $text-dark;
+
+  &:hover {
+    background: $primary-hover;
+    color: $text-white;
+  }
+
+  &:active {
+    background: $primary-active;
+  }
+
+  &:disabled {
+    border-color: $primary-disabled;
+    color: $primary-disabled;
+  }
+}
